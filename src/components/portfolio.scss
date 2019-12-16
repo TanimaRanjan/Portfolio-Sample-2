@@ -1,0 +1,40 @@
+.portfolio {
+    //width:68%;
+    width: 920px;
+    max-width: 96rem;
+
+    margin:0 auto;
+    padding:0;
+    
+    display:grid;
+  //  grid-template-rows: 30rem;
+  //  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 20px;
+    row-gap:20px;
+    justify-content: space-evenly ;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @media only screen and (max-width:1024px) {
+      width:85vw; 
+    } 
+    @media only screen and (max-width:824px) {
+      width:80vw;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+
+.portfolio__container {
+  margin-top: 6rem;
+}
+
+
+.title {
+  padding-top:5rem;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}

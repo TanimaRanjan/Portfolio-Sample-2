@@ -1,0 +1,52 @@
+.reel {
+
+    // width: 60%;
+    //width: 920px;
+    //max-width: 96rem;
+    width:100vw;
+    margin: 0 auto;
+    padding:0;
+    //padding-top: 12rem;
+    padding-top: 6rem;
+
+   // border:1px solid black;
+    // @media only screen and (max-width:1000px) {
+    //   width: 680px;
+    // }
+
+    @media only screen and (max-width:1024px) {
+     // width:85vw; 
+     // padding-top: 8.4rem + 8.4rem
+  }
+
+
+  // @media only screen and (max-width:768px) {
+    @media only screen and (max-width:824px) {
+      //width:80vw;
+      padding-top:8.5rem;
+    }
+
+    &__container {
+        position: relative;
+        padding-bottom:56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+ 
+        iframe, 
+        object,
+        embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+    
+    }
+}
+
+.reel__space {
+  display: block;
+  height: 4rem;
+}
