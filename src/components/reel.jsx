@@ -5,6 +5,7 @@ import './reel.scss'
 
 const Reel = () => {
     return (
+      <div className='reel__main'>
         <section className="reel" id="reel">
         
         <div className="reel__container">
@@ -19,6 +20,7 @@ const Reel = () => {
 
           </div>
       </section>
+      </div>
     )
 }
 

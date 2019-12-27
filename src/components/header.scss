@@ -1,17 +1,21 @@
+.top {
+ // position: fixed;
+  // width: 100%;
+  top:0;
+  width:100vw;
+  height: 9.6rem;
+  //background-color: turquoise;
+}
+
 header {
   position: fixed;
   width: 100%;
   z-index: 1000;
   top:0;
   display: block;
-  min-height: 95.78px;
-  // background: linear-gradient(
-  //   rgba(255, 255, 255, 1) 0%,
-  //   rgba(255, 255, 255, 1)
-  // );
+  min-height: 9.6rem;
   background: #efefef;
-
-
+  // background:transparent;
 }
 
 .nav {
@@ -21,10 +25,10 @@ header {
   display: flex;
   justify-content: flex-end;
 
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 2.4rem;
-  padding-top: 2.4rem;
+  //  text-transform: uppercase;
+  //  font-weight: condensed bold;
+  padding-bottom: 3.84rem; //38.4px;//2.4rem;
+  padding-top: 3.84rem ; //.4px;//2.4rem;
 
   @media only screen and (max-width:823px) {
     display: flex;
@@ -35,19 +39,17 @@ header {
   }
 
   &__logo {
-    
-    font-size: 1.4rem;
+    font-size: 2.3rem; // 23px;//1.4rem;  //2.3rem
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    // border:1px solid red;
 
 
   @media only screen and (min-width:824px) {
-     
     position: absolute;
-    left: 2.4rem;
-    top: 2rem;
+    left: 3.84rem; // 38.4px; //2.4rem; // 38.4
+    top: 3.2rem ;// 32px; //2rem;
 
-    
   }
   // @media only screen and (max-width:768px) {
     @media only screen and (max-width:824px) {
@@ -67,42 +69,27 @@ header {
   margin: 0;
   padding: 0;
   @media only screen and (max-width:824px) {
-
-    padding-top:.75rem;
-
-    
+    padding-top: 12px;//.75rem;
   }
 }
 
 .nav__item {
+  font-size: 1.6rem;
   display: inline;
-  
-  // margin-left: 2.5rem;
-  margin:.7rem;
-  // border:1px solid black;
-
-  padding-bottom: 0.5em;
-  //border:1px solid black;
- // border-bottom: 2px solid transparent;
- //transition: all 3s ease-in;
-
+  margin:11.2px ; //.7rem;
+  padding-bottom: 9px; //0.5em;
   cursor: pointer;
 
-  // &:hover {
-  //   border-bottom: 2px solid black;
-  // }
 
   &:last-child {
     
     @media only screen and (min-width:823px) {
-      margin-right: 3rem;
+      margin-right: 48px;//@at-root3rem;
     }
   }
 
   & > * {
-    padding-bottom: .5rem;
-    transition: border-bottom .5s ease-in;
-    // cursor: pointer;
+    padding-bottom: 8px; // .5rem;
   }
 }
 
@@ -112,6 +99,41 @@ header {
 }
 
 .active {
-  //padding-bottom: .5rem;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
+
+
+
+// a {
+//   text-decoration: none;
+//   color:black;
+//   text-transform: uppercase;
+//   //transition: opacity 0.1s ease;
+//   border-bottom: 2px solid transparent;
+//   //padding: 0.2rem;
+//   //margin-left: 3.5rem;
+
+//   &:hover {
+//     border-bottom: 2px solid black;
+//     //transition: opacity 0.1s ease;
+//   }
+// }
+
+
+.dark__link {
+  text-decoration: none;
+  color:black;
+  text-transform: uppercase;
+  //transition: opacity 0.1s ease;
+ // border-bottom: 2px solid transparent;
+  //padding: 0.2rem;
+  //margin-left: 3.5rem;
+
+  &:hover {
+    border-bottom: 2px solid black;
+    //transition: opacity 0.1s ease;
+  }
+}
+
+
+

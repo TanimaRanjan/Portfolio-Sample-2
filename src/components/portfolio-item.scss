@@ -49,10 +49,10 @@
 /* Move Down */
 @keyframes move-down {
   0% {
-    transform: translateY(0%);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(0%);
   }
 }
 /* Move Out */
@@ -61,7 +61,7 @@
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(-100%);
   }
 }
 
@@ -87,12 +87,14 @@
 
 
 .portfolio__img {
+  
   padding: 0;
   margin: 0;
   position: relative;
 
   background: transparent;
 
+  text-align: left;
   img {
     width: 100%;
     // height: 90%;
@@ -149,6 +151,7 @@
 }
 
 .portfolio__video {
+  text-align: left;
   color: black;
   //position: absolute;
   //bottom: 20px;
@@ -167,18 +170,19 @@
 }
 
 .portfolio__project {
+  text-align: left;
   color: black;
  // position: absolute;
  // bottom: 20px;
  // left: 80px;
-  margin-left: 10px;
+  //margin-left: 10px;
   //opacity: 1;
-  font-size: 1.1rem;
-  text-transform: uppercase;
+  //font-size: 1.1rem;
+  //text-transform: uppercase;
   transition: opacity 0.3s ease;
   border-bottom: 2px solid transparent;
-  padding: 0.2rem;
-  margin-left: 3.5rem;
+  //padding: 0.2rem;
+  //margin-left: 3.5rem;
 
   &:hover {
     border-bottom: 2px solid black;

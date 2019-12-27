@@ -1,6 +1,26 @@
 * {
   // border:1px solid black;
   box-sizing: border-box;
+
+}
+
+$bp-largest:75em; //1200px
+$bp-large:68.75em; //1100px
+$bp-medium:56.25em;// 900px
+$bp-small:768px;//37.5em; // 600px;
+$bp-xsmall:31.25em; // 600px;
+
+html {
+  font-size:62.5%; 
+  // overflow-x: hidden;
+  // @media only screen and (max-width: $bp-large) {
+  //     font-size: 60%;
+  // }
+  // @media only screen and (max-width: $bp-small) {
+  //     font-size: 50%;
+  // }
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -10,6 +30,54 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
+}
+
+
+h1 {
+  display: inline;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34rem;
+  // font-size: 3.6rem;
+  // line-height: 3.2rem;
+ // font-weight: 400;
+ // word-break: break-word;
+  font-weight: condensed bold;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  display: inline;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  // line-height: 2.8rem;
+  // font-weight: 300;
+  font-weight: condensed bold;
+  text-transform: uppercase;
+}
+h3 {
+  display: inline;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  // line-height: normal;
+  // font-weight: 300;
+}
+
+h4 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  // line-height: 2.2rem;
+  // font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  // line-height: 1.9rem;
+  // font-weight: 300;
 }
 
 /* code {

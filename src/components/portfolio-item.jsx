@@ -2,7 +2,7 @@ import React from 'react'
 
 import './portfolio-item.scss'
 
-import ProjectPage from './project-page'
+// import ProjectPage from './project-page'
 
 class PortfolioItem extends React.Component  {
 
@@ -10,20 +10,20 @@ class PortfolioItem extends React.Component  {
         super(props) 
 
         this.state = {
-            quickView:false,
-            fullProject:false,
-            videoclass:'portfolio__video--over zoomIn',
-            projectclass:'project'
+            // quickView:false,
+            // fullProject:false,
+            // // videoclass:'portfolio__video--over zoomIn',
+            // projectclass:'project'
         }
     }
 
-    handleQuickView = () => {
-        // console.log('open quick view')
-        this.setState({
-            videoclass:'portfolio__video--over zoomIn',
-            quickView:!this.state.quickView
-        })
-    }
+    // handleQuickView = () => {
+    //     // console.log('open quick view')
+    //     this.setState({
+    //         videoclass:'portfolio__video--over zoomIn',
+    //         quickView:!this.state.quickView
+    //     })
+    // }
 
     handleFullProject = () => {
         // console.log('open full Project')
@@ -33,53 +33,58 @@ class PortfolioItem extends React.Component  {
         })
     }
 
-    toggleVideo = () => {
+    // toggleVideo = () => {
 
-        this.setState( {
-            videoclass:'portfolio__video--over zoomOut'
-        })
+    //     this.setState( {
+    //         videoclass:'portfolio__video--over zoomOut'
+    //     })
 
-        setTimeout(() => {
-            this.setState({
-                quickView:!this.state.quickView
-            })  
-        }, 500);  
-    }
+    //     setTimeout(() => {
+    //         this.setState({
+    //             quickView:!this.state.quickView
+    //         })  
+    //     }, 500);  
+    // }
 
-    toggleProject= () => {
+    // toggleProject= () => {
 
-        this.setState( {
-            projectclass:'project moveOut'
-        })
+    //     this.setState( {
+    //         projectclass:'project moveOut'
+    //     })
 
-        setTimeout(() => {
-            this.setState({
-                fullProject:!this.state.fullProject
-            })  
-        }, 500);
+    //     setTimeout(() => {
+    //         this.setState({
+    //             fullProject:!this.state.fullProject
+    //         })  
+    //     }, 500);
 
 
-    }
+    // }
     render() {
+    //    console.log(this.props)
     return (
+        
         <>
         <figure className="portfolio__img">
         <img src={this.props.image} alt={this.props.title} />
-            <figcaption>{this.props.caption}</figcaption>
-            <span 
+            <figcaption><h3>{this.props.caption}</h3></figcaption>
+            {/*<span 
                 className="portfolio__video"
                 onClick={this.handleQuickView}
             
-            >Quick view</span>
-            <span 
+            >Quick view</span> 
+            */}
+            <h4><span 
                 className="portfolio__project"
-                onClick={this.handleFullProject}
-            >Full Project</span>
+                // onClick={this.handleFullProject}
+                //onClick={this.props.viewFullProject}
+                onClick={() => this.props.viewFullProject(this.props.id)}
+            >View Project</span></h4>
         </figure>
 
 
-        {/**   Quick View - Video overlay */}
-        {this.state.quickView && 
+        {/**   Quick View - Video overlay 
+                    {this.state.quickView && 
 
             <div className={this.state.videoclass}>
                 <div className="lightbox">
@@ -95,26 +100,22 @@ class PortfolioItem extends React.Component  {
                         allowFullScreen=""></iframe>
                     </div>
                 </div>
-            </div>
+            </div>*/}
 
-        }
-
-
-
-        {this.state.fullProject && 
-           <ProjectPage 
-            projectclass={this.state.projectclass}
-            toggleProject={this.toggleProject}
-            title={this.props.title}
-            client={this.props.client}
-            skills={this.props.skills}
-            desc={this.props.desc}
-            title1={this.props.title}
-            src={this.props.src}
-           />
-        }
-        </>
-    )
+            {/* this.state.fullProject && 
+                <ProjectPage 
+                 projectclass={this.state.projectclass}
+                 toggleProject={this.toggleProject}
+                 title={this.props.title}
+                 client={this.props.client}
+                 skills={this.props.skills}
+                 desc={this.props.desc}
+                 title1={this.props.title}
+                 src={this.props.src}
+                />
+            */}
+             </>
+        )
     }
 }
 

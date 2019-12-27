@@ -3,7 +3,8 @@ import React from 'react'
 import './project-page.scss'
 
 
-const ProjectPage = ({
+const ProjectPage = (
+    {
     projectclass,
     toggleProject,
     title,
@@ -13,18 +14,22 @@ const ProjectPage = ({
     title1,
     src
 
-}) => {
+}
+) => {
 
+   // console.log('project page  ',props)
     return (
+        
         <>
-       
+     
+      
     <div className={projectclass}>
     <header>
     <nav className='nav' id='navbar'>
         <span id='logo' 
         className='nav__logo' 
         onClick={toggleProject}
-        >Marcus Romero Productions
+        ><h1>Marcus Romero Productions</h1>
         </span>
     </nav>
     </header>
@@ -61,6 +66,7 @@ const ProjectPage = ({
             </div>
         </div>
     </div>
+       
 </div>
 </>
     )

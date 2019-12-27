@@ -6,17 +6,18 @@ import Header from './components/header'
 import Reel from './components/reel'
 import Portfolio from './components/portfolio'
 import Contact from './components/contact'
-import Footer from './components/footer'
-
+//import Footer from './components/footer'
+import ProjectPage from './components/project-page'
 
 class App extends React.Component {
   
   constructor () {
     super()
 
+   // let id=1;
     this.state = {
     items: [
-      {   "id":1,
+      {   "id":0,
           "title": "Young Audiences Arts for Learning",
           "subtitle":"Young Audiences 2019 Promo",
           "client":"Rubin Museum of Art",
@@ -28,7 +29,7 @@ class App extends React.Component {
       
         },
       {
-        "id":2,
+        "id":1,
         "title": "Block Party 2019 Promo",
           "client":"Rubin Museum of Art",
           "skills":"Producer/Editor/Motion Graphics",
@@ -38,7 +39,7 @@ class App extends React.Component {
           "caption":"Block Party 2019"
         },
        {
-          "id":3,
+          "id":2,
           "title": "Clapping with Stones Exhibition Promo Video",
           "client":"Rubin Museum of Art",
           "skills":"Producer/Editor/Motion Graphics",
@@ -48,7 +49,7 @@ class App extends React.Component {
           "caption":"Clapping Stone Exhibition"
         },
       {
-          "id":4,
+          "id":3,
           "title": "Brainwave Series Promo",
           "client":"Rubin Museum of Art",
           "skills":"Editor/Motion Graphics",
@@ -58,7 +59,7 @@ class App extends React.Component {
           "caption":"Brainwave Promo"
         },
       {
-         "id":5,
+         "id":4,
           "title": "Compassionate Action Series Promo",
           "client":"Rubin Museum of Art",
           "skills":"Creative/Producer/Videographer/Editor/Motion Graphics",
@@ -68,7 +69,7 @@ class App extends React.Component {
           "caption":"Compassionate Action Promo"
         },
       {
-          "id":6,
+          "id":5,
           "title": "Power Trip Promo Video",
           "client":"Rubin Museum of Art",
           "skills":"Editing/Motion Graphics",
@@ -78,17 +79,102 @@ class App extends React.Component {
           "caption":"Power Trip"
         }
     ]
-    //,
-      //  contactPage:true,
-        //contactClass:'contact'
+    ,
+
+        contactPage:false,
+        contactClass:'contact',
+        fullProject:false,
+        // videoclass:'portfolio__video--over zoomIn',
+        projectclass:'project',
+        selectedProject:0
+
+        
   }
   }
 
+
+
+  viewFullProject = (id) => {
+
+    //console.log('View full project  -', id)
+
+    this.setState({
+      projectclass:'project moveIn',
+      fullProject:!this.state.fullProject,
+      selectedProject:(id)
+    })
+  }
+
+//   handleFullProject = () => {
+//     // console.log('open full Project')
+//     this.setState({
+//         projectclass:'project moveIn',
+//         fullProject:!this.state.fullProject
+//     })
+// }
   // selectContact = () => {
   //   this.setState({
   //     contactPage:!this.state.contactPage
   //   })
   // }
+  toggleProject= () => {
+
+    this.setState( {
+        projectclass:'project moveOut'
+    })
+
+    setTimeout(() => {
+        this.setState({
+            fullProject:!this.state.fullProject
+        })  
+    }, 500);
+    
+}
+
+
+handleContact = () => {
+
+  //let openContact = this.state.contactPage;
+  //console.log(openContact)
+
+  let contactLink = document.querySelector('#contactLink')
+
+  if(!this.state.contactPage) {
+      contactLink.classList.add('active');
+  } else 
+  {
+      contactLink.classList.remove('active');    
+  }
+  
+
+
+
+  this.setState({
+      contactClass: !this.state.contactPage ? 'contact zoomIn' :  'contact zoomOut',
+  })
+  setTimeout(() => {
+      this.setState({
+          contactPage:!this.state.contactPage
+      })  
+  }, 500);
+}
+
+
+toggleContact = () => {
+  //scroll.scrollToTop();
+  this.setState( {
+      contactClass:!this.state.contactPage ? 'contact moveDown' :  'contact moveUp',
+  })
+
+  setTimeout(() => {
+      this.setState({
+          contactPage:!this.state.contactPage
+      })  
+  }, 500);
+
+  
+
+}
 
   render() {
   return (
@@ -100,14 +186,46 @@ class App extends React.Component {
      * Footer
      */
     <div className="App">
-      <Header /> 
+      <div className='top'></div>
+      <Header 
+        handleContact={this.handleContact} 
+        /> 
       <Reel />
-      <Portfolio items={this.state.items}/> 
-      <Contact />
-      <Footer />
-    </div>
-  )
+      <Portfolio 
+        items={this.state.items}
+        viewFullProject={this.viewFullProject}
+      /> 
+      {/*<Contact /> */}
+      {/*<Footer />*/}
+
+
+      {this.state.fullProject && 
+        <ProjectPage 
+         projectclass={this.state.projectclass}
+         toggleProject={this.toggleProject}
+        //  title={this.this.state.items[this.state.selectedProject].title}
+        //  client={this.this.state.items[this.state.selectedProject].client}
+        //  skills={this.this.state.items[this.state.selectedProject].skills}
+        //  desc={this.this.state.items[this.state.selectedProject].desc}
+        //  title1={this.this.state.items[this.state.selectedProject].title}
+        //  src={this.this.state.items[this.state.selectedProject].src}
+        {...this.state.items[this.state.selectedProject]}
+        />
+     }
+
+     {this.state.contactPage && 
+
+      <div className={this.state.contactClass}>
+      <Contact 
+        toggleContact={this.handleContact}
+      />
+      </div> 
+     
   }
+
+    </div>
+
+  )}
 }
 
 export default App;

@@ -1,14 +1,26 @@
+.reel__main {
+  position: sticky;
+  top: 9.6rem;
+  //background-color: green;
+  width:100vw;
+}
+
 .reel {
 
     // width: 60%;
     //width: 920px;
-    //max-width: 96rem;
-    width:100vw;
+
+    max-width: 120rem; //1200px;
+    
     margin: 0 auto;
     padding:0;
     //padding-top: 12rem;
-    padding-top: 6rem;
+    //padding-top: 9.6rem;
 
+
+    
+   // height:100vh;
+    //width:auto;
    // border:1px solid black;
     // @media only screen and (max-width:1000px) {
     //   width: 680px;
@@ -23,7 +35,7 @@
   // @media only screen and (max-width:768px) {
     @media only screen and (max-width:824px) {
       //width:80vw;
-      padding-top:8.5rem;
+      padding-top:13.6rem; //8.5rem;
     }
 
     &__container {
@@ -31,7 +43,7 @@
         padding-bottom:56.25%;
         height: 0;
         overflow: hidden;
-        max-width: 100%;
+       // max-width: 100%;
  
         iframe, 
         object,
