@@ -1,60 +1,15 @@
 import React from 'react'
 
-import {Events, animateScroll as animateScroll } from "react-scroll";
+import {Events, animateScroll } from "react-scroll";
 
 import './header.scss'
-
-
 
 class Header extends React.Component {
 
     componentDidMount() {
-    //     let target = document.querySelectorAll('a');
-
-    //    // console.log(target);
-    //     target.forEach(ref => {
-    //         ref.addEventListener("click", (e) => {
-    //             e.preventDefault();
-    //           //  console.log(ref)
-    //             let targetRef = ref.getAttribute('href');
-    //            // console.log('target ', targetRef)
-    //             let article = document.querySelector(targetRef)
-                
-    //             article.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
-    //         })
-    //     })
-
         window.addEventListener('scroll', this.listenToScroll)
-
-        // window.onscroll = () => { 
-        //    // console.log('scrolling method')
-            
-        //     if (document.documentElement.scrollTop >= 200 ) {
-        //     //    console.log('scrolling method 200 '+document)
-        //     } else { 
-        //      //   console.log(document.body)
-        //     }
-
-        // }
-
-
     }
 
-
-    // componentDidUpdate() {
-    //     console.log('componentDidUpdate');
-    // }
-
-    // componentWillUpdate() {
-    //     console.log('componentWillUpdate ');
-    // }
-
-    // componentDidMount() {
-    //     console.log('componentDidMount ');
-    // }
-    // componentWillReceiveProps() {
-    //     console.log('componentWillReceiveProps ');
-    // }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.listenToScroll)
@@ -158,7 +113,7 @@ class Header extends React.Component {
       // if(winScroll !== document.querySelector('#reel').scrollHeight + document.querySelector('#navbar').scrollHeight) {
 
         //animateScroll.scrollTo('9.6rem')
-            this.scrollTo(675)
+            this.scrollTo(document.querySelector('#reel').scrollHeight)
        // this.scrollTo(document.querySelector('#reel').scrollHeight)
      //    animateScroll.scrollToTop()
    // } else {
@@ -169,9 +124,7 @@ class Header extends React.Component {
    // }
 
    winScroll =
-   document.body.scrollTop || document.documentElement.scrollTop
-    console.log('view portfolio after '+winScroll)
-    console.log('---------------------------------------------------------------------------------------------------- ')
+    document.body.scrollTop || document.documentElement.scrollTop
     }
 
     render() {
@@ -182,24 +135,24 @@ class Header extends React.Component {
                 <span id='logo' 
                 className='nav__logo' 
                 onClick={this.scrollToTop}
-                ><h1>Marcus Romero Productions</h1>
+                ><h1 className='logo'>Marcus Romero</h1>
                 </span>
 
                 <ul className='nav__items'>
                     <li className='nav__item' >
-                        <h2><a  id='reelLink' 
+                        <h2 className='menu'><a  id='reelLink' 
                         onClick={this.viewReel}
                         className='dark__link active'>REEL</a></h2>
                     </li>
                     <li className='nav__item' >
-                        <h2><a 
+                        <h2 className='menu'><a 
                         id='portfolioLink' 
                         className='dark__link'
                         onClick={this.viewPortfolio}
                         >PORTFOLIO</a></h2>
                     </li>
                     <li className='nav__item' >
-                        <h2> <span className='dark__link' id='contactLink'  
+                        <h2 className='menu'> <span className='dark__link' id='contactLink'  
                             onClick={this.props.handleContact}>CONTACT</span></h2>
                     </li>
                 </ul>  

@@ -1,30 +1,47 @@
 .portfolio {
-    //width:68%;
-    width: 920px;
-    max-width: 96rem;
-
+    width:120rem;
+    max-width: 120rem;
     margin:0 auto;
     padding:0;
-    
     display:grid;
 
   //  grid-template-rows: 30rem;
   //  grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    column-gap: 20px;
-    row-gap:20px;
+    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    // column-gap: 20px;
+    // row-gap:20px;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
     justify-content: space-evenly ;
 
-    padding-top: 4.8rem;
+ 
     text-align: left;
 
-    @media only screen and (max-width:1024px) {
-      width:85vw; 
+    // @media only screen and (max-width:1024px) {
+    @media only screen and (max-width:1200px) {
+      // padding-left:4.8rem;
+      // padding-right:4.8rem;
+      width:calc(100vw); 
+      padding-left:4.8rem;
+      padding-right:4.8rem;
     } 
     @media only screen and (max-width:824px) {
-      width:80vw;
+      //width:80vw;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    padding: 0 0 11rem 0;
+    // @media only screen and (min-width:824px) {
+    //   margin-right: 4.8rem;//@3rem;
+    // }
+
+    // @media only screen and (min-width:1200px) {
+    //   margin-right: 0;//@3rem;
+    // }
+
+
 
    // border:1px solid red;
 }
@@ -32,35 +49,38 @@
 
 .portfolio__container {
   position: sticky;
-  top: 9.6rem;
+  //top: 9.6rem;
   //top:6rem;
   //margin-top: 6rem;
- // border:1px solid black;
+  // border:1px solid black;
   background-color: white;
   // z-index: 100;
   // display: flex;
-  padding-top: 9.6rem;
+  // padding-top: 4.8rem;
   // padding-bottom: 2rem;
   text-align: left;
 }
 
 .portfolio__title {
-    width: 920px;
-    max-width: 96rem;
+
+    width: 120rem;//920px;
+    max-width: 120rem;//96rem;
+    height: 11rem;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
     margin:0 auto;
 
-    @media only screen and (max-width:1024px) {
-      width:85vw; 
+    @media only screen and (max-width:1200px) {
+      width:calc(100vw); 
+      padding:0 4.8rem;
+      // width:85vw; 
     } 
     @media only screen and (max-width:824px) {
-      width:80vw;
+      // width:80vw;
+      text-align: center;
     }
 }
-.title {
-  
-  font-size: 4.8rem;
-  // text-transform: uppercase;
-  // font-weight: bold;
-  
-  // text-align: left;
-}
+// .title {
+
+// }

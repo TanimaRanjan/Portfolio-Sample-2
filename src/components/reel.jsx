@@ -4,12 +4,11 @@ import './reel.scss'
 
 
 const Reel = () => {
-    return (
+    return ( 
+      <> 
       <div className='reel__main'>
         <section className="reel" id="reel">
-        
         <div className="reel__container">
-        
           <iframe className="reel__video" 
             title='Reel Video'
               src="//player.vimeo.com/video/371136718?title=0&byline=0&portrait=0"
@@ -19,8 +18,9 @@ const Reel = () => {
               allowFullScreen=""></iframe>
 
           </div>
-      </section>
+        </section>
       </div>
+      </>
     )
 }
 

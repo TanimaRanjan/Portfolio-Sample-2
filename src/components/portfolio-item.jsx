@@ -2,121 +2,23 @@ import React from 'react'
 
 import './portfolio-item.scss'
 
-// import ProjectPage from './project-page'
+const PortfolioItem = (props) => {
 
-class PortfolioItem extends React.Component  {
-
-    constructor(props) {
-        super(props) 
-
-        this.state = {
-            // quickView:false,
-            // fullProject:false,
-            // // videoclass:'portfolio__video--over zoomIn',
-            // projectclass:'project'
-        }
-    }
-
-    // handleQuickView = () => {
-    //     // console.log('open quick view')
-    //     this.setState({
-    //         videoclass:'portfolio__video--over zoomIn',
-    //         quickView:!this.state.quickView
-    //     })
-    // }
-
-    handleFullProject = () => {
-        // console.log('open full Project')
-        this.setState({
-            projectclass:'project moveIn',
-            fullProject:!this.state.fullProject
-        })
-    }
-
-    // toggleVideo = () => {
-
-    //     this.setState( {
-    //         videoclass:'portfolio__video--over zoomOut'
-    //     })
-
-    //     setTimeout(() => {
-    //         this.setState({
-    //             quickView:!this.state.quickView
-    //         })  
-    //     }, 500);  
-    // }
-
-    // toggleProject= () => {
-
-    //     this.setState( {
-    //         projectclass:'project moveOut'
-    //     })
-
-    //     setTimeout(() => {
-    //         this.setState({
-    //             fullProject:!this.state.fullProject
-    //         })  
-    //     }, 500);
-
-
-    // }
-    render() {
-    //    console.log(this.props)
     return (
         
-        <>
-        <figure className="portfolio__img">
-        <img src={this.props.image} alt={this.props.title} />
-            <figcaption><h3>{this.props.caption}</h3></figcaption>
-            {/*<span 
-                className="portfolio__video"
-                onClick={this.handleQuickView}
-            
-            >Quick view</span> 
-            */}
-            <h4><span 
+        <div>
+        <figure className="portfolio__img" 
+            onClick={() => props.viewFullProject(props.id)}>
+        <img src={props.image} alt={props.title} />
+            <figcaption><h2 className='item'>{props.caption}</h2></figcaption>
+            {/*<h2><span 
                 className="portfolio__project"
-                // onClick={this.handleFullProject}
-                //onClick={this.props.viewFullProject}
-                onClick={() => this.props.viewFullProject(this.props.id)}
-            >View Project</span></h4>
+                onClick={() => props.viewFullProject(props.id)}
+            >View Project</span></h2> */}
         </figure>
-
-
-        {/**   Quick View - Video overlay 
-                    {this.state.quickView && 
-
-            <div className={this.state.videoclass}>
-                <div className="lightbox">
-                    <span className="cross cross--video " onClick={this.toggleVideo}>
-                        <span className="cross--icon" ></span>
-                    </span>
-                    <div className="lightbox-video ">
-                    <iframe width="100%" height="100%"
-                        title={this.props.title}
-                        src={this.props.src}
-                        frameBorder="0" hspace="0" vspace="0" 
-                        scrolling="scroll" 
-                        allowFullScreen=""></iframe>
-                    </div>
-                </div>
-            </div>*/}
-
-            {/* this.state.fullProject && 
-                <ProjectPage 
-                 projectclass={this.state.projectclass}
-                 toggleProject={this.toggleProject}
-                 title={this.props.title}
-                 client={this.props.client}
-                 skills={this.props.skills}
-                 desc={this.props.desc}
-                 title1={this.props.title}
-                 src={this.props.src}
-                />
-            */}
-             </>
+        </div>
         )
     }
-}
+
 
 export default PortfolioItem

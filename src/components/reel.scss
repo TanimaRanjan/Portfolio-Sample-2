@@ -1,12 +1,21 @@
 .reel__main {
   position: sticky;
-  top: 9.6rem;
+  top: 11rem;
+  @media only screen and (max-width:823px) {
+    //width:80vw;
+    top:17rem; //8.5rem;
+   // padding-bottom: 3.6rem;
+  }
   //background-color: green;
   width:100vw;
+  //padding-bottom: 5rem;
+
+  // border:1px solid red;
 }
 
 .reel {
 
+  // border:1px solid blue;
     // width: 60%;
     //width: 920px;
 
@@ -33,9 +42,9 @@
 
 
   // @media only screen and (max-width:768px) {
-    @media only screen and (max-width:824px) {
+    @media only screen and (max-width:823px) {
       //width:80vw;
-      padding-top:13.6rem; //8.5rem;
+     // padding-top:13.6rem; //8.5rem;
     }
 
     &__container {
@@ -58,7 +67,7 @@
     }
 }
 
-.reel__space {
-  display: block;
-  height: 4rem;
-}
+// .reel__space {
+//   display: block;
+//   height: 4rem;
+// }
