@@ -64,12 +64,12 @@
     padding:0;
     display:grid;
 
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 320px));
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 320px));
+    // grid-template-columns: repeat(auto-fit, 300px);
     // border:1px solid black;
     grid-column-gap: 25px;
     grid-row-gap: 30px;
-    justify-content: space-evenly ;
+    justify-content: flex-start;
 
     text-align: left;
 
@@ -77,8 +77,9 @@
       // width:calc(100vw); 
     } 
     @media only screen and (max-width:824px) {
-      grid-template-columns: repeat(auto, minmax(300px, 1fr));
-      
+      grid-template-columns: repeat(auto-fit, 300px);
+      justify-content: space-evenly ;
+
     }
 
     //  padding: 0 0 7rem 0;

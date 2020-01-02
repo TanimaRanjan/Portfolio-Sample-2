@@ -29,7 +29,9 @@
     } 
     @media only screen and (max-width:824px) {
       //width:80vw;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, 320px);
+      justify-content: space-evenly ;
     }
 
     padding: 0 0 11rem 0;
