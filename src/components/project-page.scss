@@ -7,7 +7,6 @@
     z-index: 4000;
     overflow: auto;
     background-color: white;
-    // text-align: left;
 
     &--header {
       position: sticky;
@@ -22,7 +21,6 @@
     &--reel {
       position: sticky;
       top: 11rem;
-     // max-width: 120rem; //1200px;
       width:100vw;
       @media only screen and (max-width:823px) {
         top: 17rem;
@@ -49,20 +47,12 @@
           height: 100%;
         }
       }
-
-
-      @media only screen and (max-width:823px) {
-        //width:80vw;
-       // top:13.6rem; //8.5rem;
-       // padding-bottom: 3.6rem;
-      }
     }
 
 
     &--detail {
       position: sticky;
       background-color: white;
-      // background:red;
       max-width: 120rem;
       margin:0 auto;
 
@@ -71,44 +61,27 @@
       @media only screen and (max-width:1200px) {
         width:calc(100vw); 
         padding:0 4.8rem;
-        // width:85vw; 
       } 
       @media only screen and (max-width:824px) {
-        // width:80vw;
         text-align: center;
       }
     }
 
-    &--inner {
-      @media only screen and (max-width:824px) {
-
-      }
-
-    }
   
     &--title {
-      // height: 11rem;
-      // display: flex;
-      // align-items: center;
       padding-top:3.4rem;
       padding-bottom:2.9rem;
       text-transform: uppercase;
 
-
       @media only screen and (max-width:824px) {
-        // width:80vw;
         text-align: center;
       }
     }
-  
-    // &--section-break {
-    //     width:80%;
-    // }
+
   
     &--content {
 
       &__heading {
-        // padding-top: 2.4rem;
         text-transform: uppercase;  
       }
       &__sub {
@@ -117,7 +90,6 @@
         }
   
       &__rte {
-        // font-size: 1.2rem;
         margin: 0 auto;
         padding: 2rem 0;
         @media only screen and (max-width:824px) {
@@ -127,85 +99,13 @@
 
         padding-bottom: 11rem;
       }
-  
 
-      &__video {
-       
-      }
     }
   }
   
   .project--wrapper {
-    // width: 60%;
     display: flex;
     margin: 0 auto;
-   // padding-bottom: 6rem;
     justify-content: center;
     align-items: center;
-    // border:1px solid black;
   }
-  
- // Cross - 21 * 7   -- 27 * 18
-// Size w- 24 * h 5 
-  
-  .cross {
-    display: block;
-    position: absolute;
-    width: 24px;//36px;
-    height: 24px; //36px;
-    text-align: center;
-    //vertical-align:middle;
-    z-index: 5000;
-    cursor: pointer;
-  
-    &:link,
-    &:visited,
-    &:active {
-      border: 0;
-    }
-  
-    &--project {
-      top: 27px;//50%;//40px;
-      right: 18px; //40px;
-      &:hover .cross--icon,
-      &:hover .cross--icon:after {
-        background-color: #ccc;
-      }
-    }
-  
-    &--video {
-      top: 40px;
-      right: 40px;
-    }
-  
-    &--icon {
-      display: inline-block;
-      position: relative;
-      vertical-align: top;
-      // top:18px;
-      width: 24px;//36px;
-      height: 5px;//1px;
-      background-color: #231f20;
-      transition: background-color 0.2s ease-in-out;
-      transform: rotate(45deg);
-    }
-  }
-  
-  .cross--icon,
-  .cross--icon:after {
-    display: inline-block;
-    vertical-align: top;
-    width: 24px;//36px;
-    height: 5px;
-    background-color: #231f20;
-    transition: background-color 200ms ease-in-out;
-  }
-  
-  .cross--icon:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: rotate(90deg);
-  }
-  

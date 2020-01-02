@@ -153,7 +153,7 @@ class Header extends React.Component {
                     </li>
                     <li className='nav__item' >
                         <h2 className='menu'> <span className='dark__link' id='contactLink'  
-                            onClick={this.props.handleContact}>CONTACT</span></h2>
+                            onClick={this.props.handleContact}>info/CONTACT</span></h2>
                     </li>
                 </ul>  
         </nav>
