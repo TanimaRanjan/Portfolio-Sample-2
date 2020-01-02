@@ -1,94 +1,12 @@
-
-@keyframes zoom-in {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-/* Zoom Out */
-@keyframes zoom-out {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Move In */
-@keyframes move-in {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-/* Move Out */
-@keyframes move-out {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-/* Move Down */
-@keyframes move-down {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-/* Move Out */
-@keyframes move-up {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-
-
-.zoomIn {
-  animation: zoom-in 0.5s ease-in-out forwards;
-}
-.zoomOut {
-  animation: zoom-out 0.5s ease-in-out forwards;
-}
-.moveIn {
-  animation: move-in 0.5s ease-in-out forwards;
-}
-.moveOut {
-  animation: move-out 0.5s ease-in-out forwards;
-}
-.moveDown {
-  animation: move-down 0.5s ease-in-out forwards;
-}
-.moveUp {
-  animation: move-up 0.5s ease-in-out forwards;
-}
-
-
 .portfolio__img {
-  
-  padding: 0;
-  margin: 0;
+
   position: relative;
-
   background: transparent;
-
   text-align: left;
+
   img {
     width: 100%;
   }
-
 
   &:hover {
     cursor: pointer;
@@ -103,12 +21,6 @@
   }
 
   figcaption {
-    //position: absolute;
-    //bottom: -10px;
-    //left: 10px;
-    // top:50%;
-    // left:50%;
-    // transform: translate(-50%,-50%);
     text-align: left;
     color: black;
     opacity: 1;
@@ -120,8 +32,6 @@
 
   &:hover figcaption {
     opacity: 1;
-    // border-bottom: 2px solid black;
-    // transition: opacity 0.3s ease-in;
   }
 
   &:hover .item {
@@ -149,19 +59,8 @@
 .portfolio__project {
   text-align: left;
   color: black;
- // position: absolute;
- // bottom: 20px;
- // left: 80px;
-  //margin-left: 10px;
-  //opacity: 1;
-  //font-size: 1.1rem;
-  //text-transform: uppercase;
   transition: opacity 0.3s ease;
   border-bottom: 2px solid transparent;
-  //padding: 0.2rem;
-  //margin-left: 3.5rem;
-
-  // border:1px solid black;
 
   &:hover {
     border-bottom: 2px solid black;
@@ -188,13 +87,11 @@
     width: calc(80vw);
     height: 42rem;
 
-
     position: fixed;
     z-index: 2000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    //   animation:zoom-in .9s;
     iframe {
       animation: zoom-in 0.5s;
     }
