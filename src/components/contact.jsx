@@ -32,7 +32,7 @@ const Contact = ({ toggleContact }) => {
                 alt="Marcus Romero"
               ></img>
             </div>
-            <div className="info__detail">
+            <div className="info__detail space-m">
               <div className="info__title">
                 <h1 className="title">ABOUT</h1>
               </div>
@@ -49,18 +49,18 @@ const Contact = ({ toggleContact }) => {
               </div>
             </div>
 
-            <div className="info__detail">
+            <div className="info__detail space-m">
               <div className="info__title">
                 <h1 className="title">CLIENT EXPERIENCE</h1>
               </div>
-              <div className="client__exp">
+              <div className="client__exp--content">
                 {clients.map(client => (
                   <ClientItem key={client.id} {...client} />
                 ))}
               </div>
             </div>
 
-            <div className="info__detail">
+            <div className="info__detail space-l ">
               <div className="info__title">
                 <h1 className="title">CONTACT</h1>
               </div>

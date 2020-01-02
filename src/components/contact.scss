@@ -8,7 +8,6 @@
     overflow: auto;
     background-color: white;
     padding-top: 10.5rem;
-
   }
 
   .contact--main {
@@ -58,7 +57,7 @@
 
 
 
-  .client__exp {
+  .client__exp--content {
     // width:100vw;
     max-width: 120rem;
     margin:0 auto;
@@ -135,9 +134,16 @@
 }
 
 .info__wrapper {
-  // display: flex;
+  display: flex;
   margin: 0 auto;
-  // justify-content: center;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
+.space-m {
+  padding-bottom: 6rem;
+}
+
+.space-l {
+  padding-bottom: 11rem;
+}

@@ -2,7 +2,7 @@
   position: sticky;
   top: 11rem;
   @media only screen and (max-width:823px) {
-    top:17rem; //8.5rem;
+    top:17rem; 
   }
   width:100vw;
 }
@@ -11,19 +11,6 @@
     max-width: 120rem; //1200px;
     margin: 0 auto;
     padding:0;
-    //padding-top: 12rem;
-    //padding-top: 9.6rem;
-
-
-    @media only screen and (max-width:1024px) {
-     // width:85vw; 
-     // padding-top: 8.4rem + 8.4rem
-  }
-
-    @media only screen and (max-width:823px) {
-      //width:80vw;
-     // padding-top:13.6rem; //8.5rem;
-    }
 
     &__container {
         position: relative;
