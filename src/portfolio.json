@@ -72,6 +72,16 @@
       "id":1,
       "title": "Young Audiences",
       "image":"./images/Client-Experience_Logo_red_Young-Audiences.jpg"
+    },    
+    {
+      "id":2,
+      "title": "Rubin Museum",
+      "image":"./images/Client-Experience_Logo_Rubin-Musem.png"
+    },
+    {
+      "id":3,
+      "title": "Young Audiences",
+      "image":"./images/Client-Experience_Logo_Young-Audiences.png"
     }
 
   ]

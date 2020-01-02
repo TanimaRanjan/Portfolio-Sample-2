@@ -55,7 +55,6 @@
   }
 
 
-
   .client__exp--content {
     max-width: 120rem;
     margin:0 auto;
@@ -74,18 +73,16 @@
       // width:calc(100vw); 
     } 
     @media only screen and (max-width:824px) {
-      grid-template-columns: repeat(auto-fit, 300px);
+      grid-template-columns: repeat(auto-fit, 320px);
       justify-content: space-evenly ;
 
     }
 
-    //  padding: 0 0 7rem 0;
 }
 
 
 
 .info {
-
 
   position: fixed;
   top: 0;
@@ -105,11 +102,9 @@
     text-align: left;
     @media only screen and (max-width:1200px) {
       width:calc(100vw); 
-      padding:0 4.8rem;
+      padding-left:4.8rem;
+      padding-right:4.8rem;
     } 
-    @media only screen and (max-width:824px) {
-      text-align: center;
-    }
   }
 
 
@@ -117,18 +112,11 @@
     padding-top:3.4rem;
     padding-bottom:2.9rem;
     text-transform: uppercase;
-
-    @media only screen and (max-width:824px) {
-      text-align: center;
-    }
   }
 
   &__content {
     &__rte {
       margin: 0 auto;
-      @media only screen and (max-width:824px) {
-        text-align: left;
-      }
     }
   }
 
