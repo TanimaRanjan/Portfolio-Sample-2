@@ -9,7 +9,6 @@ import portfolioData from "../../src/portfolio.json";
 
 const Contact = ({ toggleContact }) => {
   let clients = portfolioData.clients;
-  // let about = portfolioData.about;
 
   return (
     <>

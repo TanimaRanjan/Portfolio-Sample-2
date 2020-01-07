@@ -2,10 +2,6 @@ import React from "react";
 
 import { Events, animateScroll } from "react-scroll";
 
-// import './components/variables.scss';
-// import "./header.scss";
-
-
 class Header extends React.Component {
   componentDidMount() {
     window.addEventListener("scroll", this.listenToScroll);

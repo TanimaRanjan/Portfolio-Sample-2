@@ -1,7 +1,5 @@
 import React from "react";
 
-// import './footer.scss'
-
 const Footer = () => {
   return (
     <footer className="footer" id="footer">
@@ -25,6 +23,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/marcus-romero-bb156513/"
                 className="light__link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>

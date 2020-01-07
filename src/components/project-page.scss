@@ -14,7 +14,7 @@
       z-index: 4001;
       top:0;
       display: block;
-      min-height: 9.6rem;
+      min-height: $space-s;//9.6rem;
       // background: #efefef;
     }
   
@@ -62,38 +62,22 @@
         width:calc(100vw); 
         padding:0 4.8rem;
       } 
-      // @media only screen and (max-width:824px) {
-      //   text-align: center;
-      // }
     }
   
     &--title {
       padding-top:3.4rem;
       padding-bottom:2.9rem;
-      // text-transform: uppercase;
-
-      // @media only screen and (max-width:824px) {
-      //   text-align: center;
-      // }
     }
 
   
     &--content {
-
-      // &__heading {
-        // text-transform: uppercase;  
-      // }
       &__sub {
           padding-top: 1rem;
-          // text-transform: uppercase;   
         }
   
       &__rte {
         margin: 0 auto;
         padding: 1.8rem 0;
-        // @media only screen and (max-width:824px) {
-        //   text-align: left;
-        // }
         padding-bottom: 11rem;
       }
 

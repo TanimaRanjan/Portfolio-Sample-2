@@ -45,16 +45,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-content: center;
-    // align-items: center;
-
   }
 
   &__logo {
 
     cursor: pointer;
 
-    @media only screen and (min-width:824px) {
+    @media only screen and (min-width:$bp-small) {
       margin-left: 4.8rem;//@3rem;
     }
 
@@ -62,12 +59,11 @@ header {
       margin-left: 0;//@3rem;
     }
 
-      @media only screen and (max-width:823px) {
+      @media only screen and (max-width:$bp-small) {
         position: relative;
         margin:0 auto;
         padding:0;
         text-align: center;
-        
       }
   }
 

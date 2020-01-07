@@ -1,7 +1,5 @@
 import React from "react";
 
-// import "./project-page.scss";
-
 import Footer from "./footer";
 
 const ProjectPage = ({

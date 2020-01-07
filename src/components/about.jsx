@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const About = () => (
     <>
     <div className="about info__detail space-m"  id='about'>
