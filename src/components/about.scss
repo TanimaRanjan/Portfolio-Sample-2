@@ -1,0 +1,14 @@
+.about {
+    position: sticky;
+    top:$space-s;
+    // height: calc(100vh - 21rem) ;
+    @media only screen and (max-width:$bp-small) {
+        top:$space-m;
+        // min-height: calc(100vh - 28rem) ;
+        // height: 100vh;
+        // padding-top:3rem;
+      }
+
+    // overflow: hidden;
+    // border:1px solid black;
+}

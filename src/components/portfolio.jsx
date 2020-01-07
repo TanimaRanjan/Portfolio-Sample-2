@@ -1,9 +1,9 @@
 import React from 'react'
 
-import './portfolio.scss'
+// import './portfolio.scss'
 
 import PortfolioItem from './portfolio-item'
-import Footer from './footer'
+// import Footer from './footer'
 
 const Portfolio = (props) => {
 
@@ -18,7 +18,7 @@ const Portfolio = (props) => {
                     <PortfolioItem  key={item.id} viewFullProject={props.viewFullProject} {...item}/>
                 ))}
             </section>
-            <Footer></Footer>
+            
         </div>
         </div>
     )

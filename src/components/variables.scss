@@ -1,0 +1,24 @@
+$bp-largest:75em; //1200px
+$bp-large:68.75em; //1100px
+$bp-medium:56.25em;// 900px
+$bp-small:768px;//37.5em; // 600px; //840px;
+$bp-xsmall:31.25em; // 600px;
+
+$space-xs:4.8rem;
+$space-s:11rem;
+$space-m:15rem;
+
+$max-width:120rem;
+
+$footer-text:#969696;
+$footer-bg:#2b2b2b;
+
+
+
+@mixin display-flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,2 +1,83 @@
 
+.App {
+    height: 100%;
+}
 
+
+@keyframes zoom-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /* Zoom Out */
+  @keyframes zoom-out {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Move In */
+  @keyframes move-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  /* Move Out */
+  @keyframes move-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Move Down */
+  @keyframes move-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  /* Move Out */
+  @keyframes move-up {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  
+  .zoomIn {
+    animation: zoom-in 0.5s ease-in-out forwards;
+  }
+  .zoomOut {
+    animation: zoom-out 0.5s ease-in-out forwards;
+  }
+  .moveIn {
+    animation: move-in 0.5s ease-in-out forwards;
+  }
+  .moveOut {
+    animation: move-out 0.5s ease-in-out forwards;
+  }
+  .moveDown {
+    animation: move-down 0.5s ease-in-out forwards;
+  }
+  .moveUp {
+    animation: move-up 0.5s ease-in-out forwards;
+  }
+  
+  

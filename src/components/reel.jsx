@@ -1,8 +1,5 @@
 import React from 'react'
 
-import './reel.scss'
-
-
 const Reel = () => {
     return ( 
       <> 
@@ -12,7 +9,6 @@ const Reel = () => {
           <iframe className="reel__video" 
             title='Reel Video'
               src="//player.vimeo.com/video/371136718?title=0&byline=0&portrait=0"
-              
               frameBorder="0" hspace="0" 
               vspace="0" scrolling="scroll" 
               allowFullScreen=""></iframe>

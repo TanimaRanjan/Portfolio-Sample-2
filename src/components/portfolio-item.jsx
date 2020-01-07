@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './portfolio-item.scss'
+// import './portfolio-item.scss'
 
 const PortfolioItem = (props) => {
 

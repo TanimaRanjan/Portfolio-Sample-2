@@ -1,19 +1,12 @@
 import React from "react";
 
-// import "./project-page.scss";
+import "./info-page.scss";
 
 import Footer from "./footer";
 
-const ProjectPage = ({
-  id,
+const InfoContact = ({
   projectclass,
   toggleProject,
-  title,
-  client,
-  skills,
-  desc,
-  title1,
-  src
 }) => {
   return (
     <>
@@ -33,43 +26,30 @@ const ProjectPage = ({
             <div className="project--reel">
               <div className="project--reel-1">
                 <div className="project--reel-2">
-                  <iframe
-                    className="project--content__video"
-                    title={title1}
-                    src={src}
-                    frameBorder="0"
-                    hspace="0"
-                    vspace="0"
-                    scrolling="scroll"
-                    allowFullScreen=""
-                  ></iframe>
+                <img
+                src="../../images/06_Young-Audiences_2019-Promo.jpg"
+                alt="Marcus Romero"
+                    ></img>
                 </div>
               </div>
             </div>
             <div className="project--detail">
               <div className="project--title">
-                <h1 className="title">{title}</h1>
+                <h1 className="title">About</h1>
               </div>
               <div className="project--content">
-                <div className="project--content__heading">
-                  <h3 className="client">Client: </h3>
-                  <p className="client_p">{client}</p>
-                </div>
-                <div className="project--content__sub">
-                  <h3 className="client">Roles: </h3>
-                  <p className="client_p">{skills}</p>
-                </div>
                 <div className="project--content__rte">
-                  <p className="project--content__para content">{desc}</p>
+                  <p className="project--content__para content">
+                  I am an experienced Motion Graphics Artist and Video Editor. I specialize in working with arts and educational organizations and I have a passion for crafting impactful videos and animations that share inspiring stories and important missions.</p>
                 </div>
               </div>
             </div>
             <Footer />
           </div>
-        </div>
+        </div> 
       </div>
     </>
   );
 };
 
-export default ProjectPage;
+export default InfoContact;
