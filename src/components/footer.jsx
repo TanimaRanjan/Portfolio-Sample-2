@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer" id="footer">
-      <p>Let's Keep in Touch!</p>
+      <p>We should talk</p>
         <ul className="footer__items">
           <li className="footer__item">
             <h2 className="menu">
@@ -30,7 +30,6 @@ const Footer = () => {
             </h2>
           </li>
         </ul>
-      <p>Copyright 2019 Marcus Romero Productions</p>
     </footer>
   );
 };
