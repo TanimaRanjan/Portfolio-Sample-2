@@ -1,7 +1,17 @@
 {
   "title":"Marcus Romero Production",
   "items":[
-    {   "id":0,
+    {  "id":0,
+      "title":"A National Arts Advocacy Initiative",
+      "client":"Young Audiences Arts for Learning",
+      "skills":"Producer, Video Editor & Motion Graphics Artist",
+      "desc":"Young Audiences Arts for Learning (YA) is the nation’s largest arts-in-education learning network, serving more than 5 million kids each year in more than 7 thousand schools and community centers across the country. This video will promote their annual advocacy initiative that is celebrated across the US and is congressionally recognized with US resolutions and Senate Proclamations.",
+      "src":"//player.vimeo.com/video/391549378?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&autopause=0",
+      "image":"./images/07_YA_Week_Still_for_Web.jpg",
+      "caption":"A National Arts Advocacy Initiative"
+  
+    },
+    {   "id":1,
         "title":"Making a Difference",
         "client":"Young Audiences Arts for Learning",
         "skills":"Producer, Video Editor & Motion Graphics Artist",
@@ -12,7 +22,7 @@
     
       },
     {
-      "id":1,
+      "id":2,
       "title":"Power Play",
       "client":"Rubin Museum of Art",
       "skills":"Producer, Video Editor & Motion Graphics Artist",
@@ -22,7 +32,7 @@
         "caption":"Power Play"
       },
      {
-        "id":2,
+        "id":3,
         "title":"Clapping with Stones",
         "client":"Rubin Museum of Art",
         "skills":"Producer, Video Editor & Motion Graphics Artist",
@@ -32,7 +42,7 @@
         "caption":"Clapping with Stones"
       },
     {
-        "id":3,
+        "id":4,
         "title":"Brainwave Series",
         "client":"Rubin Museum of Art",
         "skills":"Video Editor & Motion Graphics Artist",
@@ -42,7 +52,7 @@
         "caption":"Brainwave Series"
       },
     {
-       "id":4,
+       "id":5,
        "title":"Compassionate Action Series",
         "client":"Rubin Museum of Art",
         "skills":"Producer, Videographer, Video Editor & Motion Graphics Artist",
@@ -52,7 +62,7 @@
         "caption":"Compassionate Action Series"
       },
     {
-        "id":5,
+        "id":6,
         "title": "Power Trip",
         "client":"Rubin Museum of Art",
         "skills":"Video Editor & Motion Graphics Artist",
