@@ -18,20 +18,20 @@ class Header extends React.Component {
 
     let reelLink = document.querySelector("#reelLink");
     let portfolioLink = document.querySelector("#portfolioLink");
-    let contactLink = document.querySelector("#contactLink");
+    let aboutLink = document.querySelector("#aboutLink");
 
     if (winScroll < document.querySelector("#reel").scrollHeight) {
       portfolioLink.classList.remove("active");
-      contactLink.classList.remove("active");
+      aboutLink.classList.remove("active");
       reelLink.classList.add("active");
     }
     if (
       winScroll >= document.querySelector("#reel").scrollHeight &&
-      winScroll < document.querySelector("#about").scrollHeight
+      winScroll < document.querySelector("#portfolio").scrollHeight
     ) {
       reelLink.classList.remove("active");
-      contactLink.classList.remove("active");
-      portfolioLink.classList.add("active");
+      aboutLink.classList.add("active");
+      portfolioLink.classList.remove("active");
     }
 
     if (
@@ -39,9 +39,9 @@ class Header extends React.Component {
       document.querySelector("#about").scrollHeight +
         document.querySelector("#reel").scrollHeight
     ) {
-      portfolioLink.classList.remove("active");
+      portfolioLink.classList.add("active");
       reelLink.classList.remove("active");
-      contactLink.classList.add("active");
+      aboutLink.classList.remove("active");
     }
   };
 
@@ -110,7 +110,7 @@ class Header extends React.Component {
               <li className="nav__item">
                 <h2 className="menu">
                   <a
-                    id="portfolioLink"
+                    id="aboutLink"
                     className="dark__link"
                     onClick={this.viewPortfolio}
                   >
@@ -121,10 +121,9 @@ class Header extends React.Component {
               <li className="nav__item">
                 <h2 className="menu">
                   <a
-                    id="contactLink"
+                    id="portfolioLink"
                     className="dark__link"
-                    onClick={this.viewInfo}
-                  >
+                    onClick={this.viewInfo}>
                   PORTFOLIO
                   </a>
                 </h2>
