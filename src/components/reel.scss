@@ -5,6 +5,12 @@
     top:$space-m; 
   }
   width:100vw;
+
+  @media only screen and (max-height:$bp-xsmall){
+    position: relative;
+    top:0; 
+  }
+  
 }
 
 .reel {
@@ -12,6 +18,11 @@
     margin: 0 auto;
     padding:0;
 
+    @media only screen and (max-height:$bp-xsmall){
+      position: relative;
+      max-width: 130vh; 
+    }
+    
     &__container {
         position: relative;
         padding-bottom:56.25%;
