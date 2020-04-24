@@ -4,11 +4,14 @@
     // height: calc(100vh - 21rem) ;
     @media only screen and (max-width:$bp-small) {
         top:$space-m;
-        // min-height: calc(100vh - 28rem) ;
-        // height: 100vh;
-        // padding-top:3rem;
       }
-
-    // overflow: hidden;
-    // border:1px solid black;
+    @media only screen and (max-height:$bp-xsmall){
+        // position: relative;
+        top:0;
+        z-index: inherit
+    }      
+    // @media only screen and (max-height:$bp-xsmall){
+    //     position: relative;
+    //     top:-2*$space-m;
+    // }
 }
