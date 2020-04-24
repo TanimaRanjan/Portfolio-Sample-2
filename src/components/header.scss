@@ -6,6 +6,10 @@
   @media only screen and (max-width:$bp-small) {
     height: $space-m;
   }
+  @media only screen and (max-height:$bp-xsmall){
+    position: relative;
+    height: 0;
+  }
 }
 
 header {
@@ -15,8 +19,10 @@ header {
   top:0;
   display: block;
   background-color: white;;
-  // background: #efefef;
-
+   //background: #efefef;
+  @media only screen and (max-height:$bp-xsmall){
+    position: relative;
+  }
 }
 
 .nav {
@@ -26,6 +32,9 @@ header {
   @media only screen and (max-width:$bp-small) {
     min-height: $space-m;
   }
+  // @media only screen and (max-height:$bp-xsmall) {
+  //   min-height: $space-s;
+  // }
 
   position: relative;
   text-align: right;
@@ -59,14 +68,18 @@ header {
       margin-left: 0;//@3rem;
     }
 
-      @media only screen and (max-width:$bp-small) {
+    // @media only screen and (min-height:$bp-small){
+    //   .logo {
+    //     font-size: 1rem;
+    //   }
+    // }
+    @media only screen and (max-width:$bp-small) {
         position: relative;
         margin:0 auto;
         padding:0;
         text-align: center;
       }
   }
-
 
 }
 
