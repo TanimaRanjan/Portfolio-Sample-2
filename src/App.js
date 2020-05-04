@@ -29,7 +29,7 @@ class App extends React.Component {
   }
 
   viewFullProject = id => {
-    //console.log('View full project  -', id)
+    // console.log('View full project  -', id)
 
     this.setState({
       projectclass: "project moveIn",
@@ -107,13 +107,15 @@ class App extends React.Component {
           viewFullProject={this.viewFullProject}
         />
         {/*<Contact /> */}
-        {/*<Footer />*/}
+        {/*<Footer />*/}      
 
         {this.state.fullProject && (
+
+          
           <ProjectPage
             projectclass={this.state.projectclass}
             toggleProject={this.toggleProject}
-            {...this.state.items[this.state.selectedProject]}
+            {...this.state.items.filter(item => item.id==this.state.selectedProject)[0]}
           />
         )}
 
