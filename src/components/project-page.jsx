@@ -13,6 +13,20 @@ const ProjectPage = ({
   title1,
   src
 }) => {
+
+  // console.log(props)
+  // let {
+  //   id,
+  //   projectclass,
+  //   toggleProject,
+  //   title,
+  //   client,
+  //   skills,
+  //   desc,
+  //   title1,
+  //   src
+  // } = props
+
   return (
     <>
       <div className={projectclass}>
