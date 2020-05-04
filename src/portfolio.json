@@ -1,7 +1,17 @@
 {
   "title":"Marcus Romero Production",
   "items":[
-    {  "id":0,
+    {  "id":100,
+      "title":"Healing the Hidden Wounds of War",
+      "client":"Headstrong",
+      "skills":"Creative Lead, Producer & Motion Graphics Artist",
+      "desc":"Headstrong is a national organization that provides cost-free and stigma-free mental health treatment for post- 9/11 veterans and their families. This video promotes Headstrong’s mission and will help raise awareness for the organization and its treatment to help end veteran suicide.",
+      "src":"//player.vimeo.com/video/410739673?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&autopause=0",
+      "image":"./images/08_Headstrong.png",
+      "caption":"Healing the Hidden Wounds of War"
+  
+    },
+    {  "id":101,
       "title":"A National Arts Advocacy Initiative",
       "client":"Young Audiences Arts for Learning",
       "skills":"Producer, Video Editor & Motion Graphics Artist",
@@ -11,18 +21,9 @@
       "caption":"A National Arts Advocacy Initiative"
   
     },
-    {   "id":1,
-        "title":"Making a Difference",
-        "client":"Young Audiences Arts for Learning",
-        "skills":"Producer, Video Editor & Motion Graphics Artist",
-        "desc":"Young Audiences Arts for Learning (YA) is the nation’s largest arts-in-education learning network, serving more than 5 million kids each year in more than 7 thousand schools and community centers across the country. Video content distributed across their social media network promoted organization’s brand, programming, policies and practices. ",
-        "src":"//player.vimeo.com/video/368086700?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&autopause=0",
-        "image":"./images/06_Young-Audiences_Making-a-Difference.jpg",
-        "caption":"Making a Difference"
-    
-      },
+   
     {
-      "id":2,
+      "id":103,
       "title":"Power Play",
       "client":"Rubin Museum of Art",
       "skills":"Producer, Video Editor & Motion Graphics Artist",
@@ -32,7 +33,7 @@
         "caption":"Power Play"
       },
      {
-        "id":3,
+        "id":104,
         "title":"Clapping with Stones",
         "client":"Rubin Museum of Art",
         "skills":"Producer, Video Editor & Motion Graphics Artist",
@@ -41,18 +42,9 @@
         "image":"./images/04_Rubin-Museum-of-Art_Clapping-with-Stones.jpg",
         "caption":"Clapping with Stones"
       },
+
     {
-        "id":4,
-        "title":"Brainwave Series",
-        "client":"Rubin Museum of Art",
-        "skills":"Video Editor & Motion Graphics Artist",
-        "desc":"Neuroscientist and New York Times bestselling Author David Eagleman joined the Rubin as the first Brainwave Fellow, curating a series of talks, films and experiences to explore time’s impact on our brains, everyday life and perception of the future.",
-        "src":"//player.vimeo.com/video/367472214?title=0&byline=0&portrait=0;autoplay=1&autopause=0",
-        "image":"./images/03_Rubin-Museum-of-Art_Brainwave-Series.jpg",
-        "caption":"Brainwave Series"
-      },
-    {
-       "id":5,
+       "id":106,
        "title":"Compassionate Action Series",
         "client":"Rubin Museum of Art",
         "skills":"Producer, Videographer, Video Editor & Motion Graphics Artist",
@@ -62,7 +54,7 @@
         "caption":"Compassionate Action Series"
       },
     {
-        "id":6,
+        "id":107,
         "title": "Power Trip",
         "client":"Rubin Museum of Art",
         "skills":"Video Editor & Motion Graphics Artist",
