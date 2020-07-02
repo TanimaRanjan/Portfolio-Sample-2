@@ -9,7 +9,7 @@ const Reel = () => {
         <div className="reel__container">
           <iframe className="reel__video" 
             title='Reel Video'
-              src="//player.vimeo.com/video/371136718?title=0&byline=0&portrait=0&color=008efe&amp\';controls=1&fullscreen=1&buttons.share=false&embed.buttons.like=false;autoplay=1&loop=0"
+              src="//player.vimeo.com/video/425582388?title=0&byline=0&portrait=0&color=008efe&amp\';controls=1&fullscreen=1&buttons.share=false&embed.buttons.like=false;autoplay=1&loop=0"
               frameBorder="0" hspace="0" 
               vspace="0" scrolling="scroll" 
               allowFullScreen=""></iframe>
