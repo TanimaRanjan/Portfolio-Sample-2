@@ -110,8 +110,6 @@ class App extends React.Component {
         {/*<Footer />*/}      
 
         {this.state.fullProject && (
-
-          
           <ProjectPage
             projectclass={this.state.projectclass}
             toggleProject={this.toggleProject}
