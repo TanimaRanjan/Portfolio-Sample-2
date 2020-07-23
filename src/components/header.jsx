@@ -81,8 +81,6 @@ class Header extends React.Component {
   viewInfo = () => {
     this.scrollTo(
       document.querySelector("#about").scrollHeight  + document.querySelector("#reel").scrollHeight )
-      // + document.querySelector("#header").scrollHeight  -  document.querySelector("#footer").scrollHeight );
-      // this.scrollToEle()
 
   };
 
